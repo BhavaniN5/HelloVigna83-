@@ -3,6 +3,10 @@
 
 name: Build and deploy ASP app to Azure Web App - HelloLoki83-
 
+jobs:
+- job: MyServerJob
+  pool:
+    name: server
 steps:
 - task: InvokeRESTAPI@1
   displayName: 'Invoke REST API: GET'
