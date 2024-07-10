@@ -12,6 +12,6 @@ jobs:
   - task: InvokeRESTAPI@1
     displayName: 'Invoke REST API: GET'
     inputs:
-      serviceConnection: 'github.com_BhavaniN5'
+      serviceConnection: 'BhavaniN5'
       method: GET
       successCriteria: 'eq(root[''count''], ''1425'')'
